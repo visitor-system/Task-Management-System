@@ -1,0 +1,232 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1e40af;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Glassmorphic Card Styles */
+.dashboard, .task-creation, .task-tracking, .reports,
+.dashboard-container, .login-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard:hover, .task-creation:hover, .task-tracking:hover, .reports:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Summary Cards */
+.task-summary {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.task-summary div {
+    flex: 1;
+    min-width: 120px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-clip: padding-box;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-summary div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: #1f2937;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+}
+
+td {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+input[type="text"], input[type="date"], textarea, select {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    font-size: 15px;
+    color: #1f2937;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Buttons */
+button[type="submit"], .btn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: #1f2937;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover, .btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Login Form */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 25px;
+    color: #1e40af;
+}
+
+/* Form Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+/* Error Message */
+.error {
+    color: #ef4444;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Task Links */
+.task-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.task-links .btn-primary {
+    background: rgba(59, 130, 246, 0.15);
+    color: #1e40af;
+}
+
+.task-links .btn-primary:hover {
+    background: rgba(59, 130, 246, 0.25);
+}
+
+.task-links .btn-secondary {
+    background: rgba(16, 185, 129, 0.15);
+    color: #047857;
+}
+
+.task-links .btn-secondary:hover {
+    background: rgba(16, 185, 129, 0.25);
+}
+
+.task-links .btn-info {
+    background: rgba(14, 165, 233, 0.15);
+    color: #0369a1;
+}
+
+.task-links .btn-info:hover {
+    background: rgba(14, 165, 233, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .task-summary {
+        flex-direction: column;
+    }
+
+    .task-summary div {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .task-links {
+        flex-direction: column;
+    }
+
+    .task-links .btn {
+        width: 100%;
+    }
+}
