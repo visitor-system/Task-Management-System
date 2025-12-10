@@ -1,0 +1,58 @@
+<table class="table table-bordered">
+          					<thead>
+          						<tr>
+          							<th>Department</th>
+          							<th>Total Tasks</th>
+          							<th>Pending</th>
+          							<th>In Progress</th>
+          							<th>Completed</th>
+          							<th>On Hold</th>
+          							<th>Overdue</th>
+          							<th>Completion Rate</th>
+          						</tr>
+          					</thead>
+          					<tbody>
+          						          							<tr>
+          								<td><b>HR Department</b></td>
+          								<td>1</td>
+          								<td>1</td>
+          								<td>0</td>
+          								<td>0</td>
+          								<td>0</td>
+          								<td><span class="badge badge-danger">0</span></td>
+          								<td>
+          									<div class="progress">
+          										<div class="progress-bar" style="width: 0%">0.0%</div>
+          									</div>
+          								</td>
+          							</tr>
+          							          							<tr>
+          								<td><b>IT Department</b></td>
+          								<td>2</td>
+          								<td>1</td>
+          								<td>1</td>
+          								<td>0</td>
+          								<td>0</td>
+          								<td><span class="badge badge-danger">0</span></td>
+          								<td>
+          									<div class="progress">
+          										<div class="progress-bar" style="width: 0%">0.0%</div>
+          									</div>
+          								</td>
+          							</tr>
+          							          							<tr>
+          								<td><b>Sales Department</b></td>
+          								<td>0</td>
+          								<td>0</td>
+          								<td>0</td>
+          								<td>0</td>
+          								<td>0</td>
+          								<td><span class="badge badge-danger">0</span></td>
+          								<td>
+          									<div class="progress">
+          										<div class="progress-bar" style="width: 0%">0.0%</div>
+          									</div>
+          								</td>
+          							</tr>
+          							          					</tbody>
+          				</table>

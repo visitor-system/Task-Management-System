@@ -1,0 +1,7 @@
+"Company Name: PDVS"
+"Address: Kolhapur"
+"Generated On: 12 Nov 2025, 08:18"
+"From: 2025-11-12T00:00, To: 2025-11-12T23:59"
+
+"Task ID","Task Name","Assigned To","Start Date","Due Date",Status,Completion,Description
+Database query error: Unknown column 't.name' in 'field list'
